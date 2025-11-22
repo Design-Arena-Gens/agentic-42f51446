@@ -1,0 +1,18 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; padding: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; color: #0f172a; background: #f8fafc; }
+
+.container { display: grid; grid-template-rows: auto 1fr auto; min-height: 100vh; }
+.header { padding: 16px 24px; border-bottom: 1px solid #e2e8f0; background: white; position: sticky; top: 0; z-index: 10; }
+.main { padding: 16px; }
+.footer { padding: 12px 24px; border-top: 1px solid #e2e8f0; color: #475569; background: #fff; }
+
+.grid { display: grid; grid-template-columns: 320px 1fr; gap: 16px; }
+.panel { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px; box-shadow: 0 1px 2px rgba(0,0,0,0.03); }
+.controls .row { display: grid; grid-template-columns: 120px 1fr; align-items: center; gap: 8px; margin-bottom: 10px; }
+.controls input { padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; }
+.metrics { margin-top: 12px; display: grid; gap: 6px; font-size: 14px; color: #334155; }
+.chart { height: 70vh; }
+
+/* lightweight-charts container */
+.chart-container { position: relative; width: 100%; height: 60vh; }
+.rsi-container { position: relative; width: 100%; height: 18vh; margin-top: 12px; }
